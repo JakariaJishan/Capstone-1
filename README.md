@@ -91,8 +91,8 @@ I do recommend this method given it is easier, but if you want you can make this
 
 Bryan Hurtado
 
-- GitHub: [@DarkxDev](link)
-- Twitter: [@BryanHurtado\_](link)
+- GitHub: [@](link)
+- Twitter: [@](link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
