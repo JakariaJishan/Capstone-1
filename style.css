@@ -28,6 +28,11 @@ body {
 
 }
 
+header {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    position: sticky;
+}
+
 .mobile-nav {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: sticky;
@@ -52,7 +57,7 @@ body {
 /* navigation bar for desktop */
 .top-nav {
     background-color: #3E3E3E;
-
+    display: none;
 }
 
 .top-nav ul {
@@ -68,16 +73,17 @@ body {
 }
 
 .desktop-nav {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    padding: 10px 0;
 }
 
 .desktop-nav-items ul {
     display: flex;
-    gap: 35px;
+    gap: 45px;
     align-items: center;
     justify-content: center;
 }
@@ -111,7 +117,12 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 80px 16px;
+    padding: 80px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .headlines p {
@@ -237,6 +248,10 @@ main {
     border: none;
 }
 
+.main-btn a {
+    display: none;
+}
+
 /* featured speaker */
 .speaker {
     padding: 30px 0;
@@ -326,3 +341,82 @@ main {
 }
 
 /* desktop version - 768px wider */
+@media screen and (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .top-nav {
+        display: block;
+    }
+
+    .desktop-nav {
+        /* display: block; */
+        display: flex;
+    }
+
+    .hero {
+        background: url('./images/hero-desktop-bg.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 80px 0;
+    }
+
+    .headlines,
+    .hero-caption,
+    .schedule {
+        width: 500px;
+    }
+
+    .headlines h1 {
+        font-size: 45px;
+        line-height: 48px;
+    }
+
+    .headlines p {
+        font-size: 35px;
+        line-height: 36px;
+    }
+
+    .main-cards {
+        flex-direction: row;
+        gap: 3px;
+        width: 80%;
+        margin: 40px auto;
+    }
+
+    .main-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 4px;
+        border: 2px solid transparent;
+
+    }
+
+    .main-card:hover {
+        border: 2px solid white;
+        cursor: pointer;
+    }
+
+    .main-card h4 {
+        width: 100%;
+    }
+
+    .main-card h6 {
+        width: 100%;
+        font-size: 11px;
+        color: var(--graish);
+    }
+
+    .main-btn button {
+        display: none;
+    }
+
+    .main-btn a {
+        color: var(--graish);
+        text-decoration: underline;
+        margin: 25px 0;
+        display: block;
+    }
+}
