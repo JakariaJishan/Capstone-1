@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'lato';
-    src: url('Lato-Regular.ttf') format('truetype');
+    src: url('./fonts/Lato-Regular.ttf') format('truetype');
 }
 
 * {
@@ -31,12 +31,11 @@ body {
 header {
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
     position: sticky;
+    top: 0;
+    background-color: #fff;
 }
 
-.mobile-nav {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    position: sticky;
-}
+
 
 .mobile-header {
     display: flex;
@@ -49,10 +48,35 @@ header {
     visibility: hidden;
 }
 
-.drop-down {
-    display: none;
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #272A31;
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
+.side-nav ul li a {
+    padding: 8px 32px;
+    font-size: 25px;
+    color: var(--secondary);
+    display: block;
+    transition: 0.3s;
+}
+
+.side-nav ul li a:hover {
+    color: var(--graish);
+}
+
+.side-nav .close-btn img {
+    height: 70px;
+    margin: 3px;
+    transition: 0.5s;
+}
 
 /* navigation bar for desktop */
 .top-nav {
@@ -260,7 +284,7 @@ main {
 /* featured speaker */
 .speaker {
     padding: 30px 0;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -479,6 +503,10 @@ footer {
         text-decoration: underline;
         margin: 25px 0;
         display: block;
+    }
+
+    .speaker {
+        width: 80%;
     }
 
     .speaker-btn {
