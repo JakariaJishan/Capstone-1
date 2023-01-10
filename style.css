@@ -303,7 +303,7 @@ main {
     margin: 15px auto;
 }
 
-.speaker-cards {
+.speaker-grid {
     margin: 40px 12px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -351,6 +351,7 @@ main {
 
 .speaker-btn {
     text-align: center;
+    margin: 0 20px;
 }
 
 .speaker-btn button {
@@ -374,6 +375,7 @@ main {
 .sponsors {
     padding: 30px 0;
     background-color: #414246;
+    display: none;
 }
 
 .sponsors-body {
@@ -410,14 +412,8 @@ main {
 }
 
 footer {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    padding: 40px;
+    display: none;
+
 }
 
 .footer-content p {
@@ -513,11 +509,22 @@ footer {
         display: none;
     }
 
-    .speaker-cards {
+    .speaker-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .sponsors {
+        display: block;
+    }
+
     footer {
-        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 40px;
     }
 }

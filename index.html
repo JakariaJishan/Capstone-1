@@ -148,57 +148,27 @@
 
     <!-- featured speakers -->
 
-    <section class="speaker">
+    <section class="speaker" id="speaker">
         <div class="speaker-head">
             <h3>Featured Speakers</h3>
             <hr>
         </div>
-        <div class="speaker-cards">
-            <div class="speaker-card">
+        <div class="speaker-cards" id="speaker-cards">
+            <!-- load data from js file -->
+
+
+            <!-- <div class="speaker-card">
                 <img src="./images/speaker-1.png" alt="icon">
                 <div class="speaker-card-content">
-                    <h4>Yochai Benkler</h4>
+                    <h4>${dataObj[i].name}</h4>
                     <p>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
                     <hr>
                     <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
                         Networks in 2006</small>
                 </div>
+              </div> -->
 
-            </div>
-            <div class="speaker-card">
-                <img src="./images/speaker-3.png" alt="icon">
-                <div class="speaker-card-content">
-                    <h4>SohYeong Noh</h4>
-                    <p>Director of Art Centre Nabi and a board member of CC Korea</p>
-                    <hr>
-                    <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                        Networks in 2006</small>
-                </div>
-
-            </div>
-            <div class="speaker-card">
-                <img src="./images/speaker-3.png" alt="icon">
-                <div class="speaker-card-content">
-                    <h4>SohYeong Noh</h4>
-                    <p>Director of Art Centre Nabi and a board member of CC Korea</p>
-                    <hr>
-                    <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                        Networks in 2006</small>
-                </div>
-
-            </div>
-            <div class="speaker-card">
-                <img src="./images/speaker-3.png" alt="icon">
-                <div class="speaker-card-content">
-                    <h4>SohYeong Noh</h4>
-                    <p>Director of Art Centre Nabi and a board member of CC Korea</p>
-                    <hr>
-                    <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                        Networks in 2006</small>
-                </div>
-
-            </div>
-            <div class="speaker-btn">
+            <div class="speaker-btn" id="load-more-btn">
                 <button>MORE <img src="./images/arrow-down.png" alt="arrow-down icon"></button>
             </div>
         </div>
@@ -236,6 +206,9 @@
 
 
     <script src="./script.js"></script>
+    <script>
+        loadOnFirst();
+    </script>
 </body>
 
 </html>
