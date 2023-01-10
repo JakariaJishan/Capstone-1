@@ -72,6 +72,11 @@ header {
     font-size: 14px;
 }
 
+.top-nav ul li a img {
+    height: 18px;
+    width: 18px;
+}
+
 .desktop-nav {
     display: none;
     align-items: center;
@@ -255,6 +260,8 @@ main {
 /* featured speaker */
 .speaker {
     padding: 30px 0;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .speaker-head h3 {
@@ -283,7 +290,7 @@ main {
     padding: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -338,6 +345,60 @@ main {
 .speaker-btn button img {
     margin-left: 10px;
     height: 8px;
+}
+
+.sponsors {
+    padding: 30px 0;
+    background-color: #414246;
+}
+
+.sponsors-body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sponsors-head {
+    margin-bottom: 40px;
+}
+
+.sponsors-head h3 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--graish);
+}
+
+.sponsors-head hr {
+    border: 1px solid var(--secondary);
+    width: 40px;
+    margin: 15px auto;
+}
+
+.sponsors-brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-weight: 700;
 }
 
 /* desktop version - 768px wider */
@@ -418,5 +479,17 @@ main {
         text-decoration: underline;
         margin: 25px 0;
         display: block;
+    }
+
+    .speaker-btn {
+        display: none;
+    }
+
+    .speaker-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        flex-direction: row;
     }
 }
