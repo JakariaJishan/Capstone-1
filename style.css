@@ -32,7 +32,6 @@ body {
 }
 
 .mixed {
-  /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
   background: url('./images/mobile-intro-bg.png');
   background-position: center;
   background-size: cover;
@@ -163,10 +162,6 @@ body {
 /* hero */
 
 .hero {
-  /* background: url('./images/mobile-intro-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
   padding: 50px 0;
 }
 
@@ -182,7 +177,6 @@ body {
 }
 
 .headlines h1 {
-  /* color: var(--secondary); */
   font-size: 30px;
   font-weight: 800;
   line-height: 35px;
@@ -191,8 +185,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* background-clip: text; */
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -297,8 +289,6 @@ main {
   border: none;
 }
 
-
-
 /* featured speaker */
 .speaker {
   padding: 30px 0;
@@ -374,8 +364,6 @@ main {
   margin: 20px 0;
   padding: 12px 0;
   border: 1px solid #dcdcdc;
-
-  /* filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25)); */
   border-radius: 4px;
   background-color: white;
   width: 100%;
@@ -447,7 +435,6 @@ footer {
   }
 
   .desktop-nav {
-    /* display: block; */
     display: flex;
   }
 

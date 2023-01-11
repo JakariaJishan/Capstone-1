@@ -33,7 +33,6 @@ body {
 }
 
 .mixed {
-  /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
   background: url('./images/mobile-intro-bg.png');
   background-position: center;
   background-size: cover;
@@ -159,10 +158,6 @@ body {
 /* hero */
 
 .hero {
-  /* background: url('./images/mobile-intro-bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
   padding: 50px 0;
 }
 
@@ -250,10 +245,7 @@ main {
   max-width: 400px;
 }
 
-
-
 /* post section */
-
 .main-post {
   width: 80%;
   margin: 0 auto;
@@ -413,7 +405,6 @@ main {
   }
 
   .desktop-nav {
-    /* display: block; */
     display: flex;
   }
 
