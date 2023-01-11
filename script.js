@@ -12,19 +12,18 @@ closeBtn.addEventListener("click", () => {
 const dataObj = [
   {
     id: 1,
-    name: "Yochai Benkler",
-    title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
-    desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    name: "Grey Nguyen",
+    title: "Introducing Antares & Our New Corporate Cards",
+    desc: "More ways to spend your funds, and contextualize your data.",
+    image: "./images/speaker_1.png",
   },
   {
     id: 2,
-    name: "Yochai Benkler",
+    name: "Marcella Plazas",
     title:
-      "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
+      "Discovering a Constellation: Meet Tiffany",
     desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    image: "./images/speaker_2.png",
   },
   {
     id: 3,
@@ -32,7 +31,7 @@ const dataObj = [
     title:
       "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
     desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    image: "./images/speaker_3.png",
   },
   {
     id: 4,
@@ -40,7 +39,7 @@ const dataObj = [
     title:
       "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
     desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    image: "./images/speaker_4.png",
   },
   {
     id: 5,
@@ -48,7 +47,7 @@ const dataObj = [
     title:
       "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
     desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    image: "./images/speaker_5.png",
   },
   {
     id: 6,
@@ -56,7 +55,7 @@ const dataObj = [
     title:
       "Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School",
     desc: "Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006",
-    image: "./images/speaker-1.png",
+    image: "./images/speaker_6.png",
   },
 ];
 
@@ -73,26 +72,24 @@ function loadOnFirst() {
     if (screenSize < 768 && i < loadItem) {
       out += `
       <div class="speaker-card">
-        <img src="./images/speaker-1.png" alt="icon">
+        <img src="${element.image}" alt="icon">
         <div class="speaker-card-content">
             <h4>${element.name}</h4>
-            <p>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <p>${element.title}</p>
             <hr>
-            <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                Networks in 2006</small>
+            <small>${element.desc}</small>
         </div>
       </div>
       `;
     } else if (screenSize >= 768) {
       out += `
       <div class="speaker-card">
-        <img src="./images/speaker-1.png" alt="icon">
-        <div class="speaker-card-content">
+      <img src="${element.image}" alt="icon">
+      <div class="speaker-card-content">
             <h4>${element.name}</h4>
-            <p>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <p>${element.title}</p>
             <hr>
-            <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                Networks in 2006</small>
+            <small>${element.desc}</small>
         </div>
       </div>
       `;
@@ -104,17 +101,16 @@ function loadOnFirst() {
   div.innerHTML = out;
 
   loadMoreBtn.addEventListener("click", () => {
-    for (let i = 0; i < dataObj.length-2; i++) {
+    for (let i = 0; i < dataObj.length - 2; i++) {
       const element = dataObj[i];
       out += `
       <div class="speaker-card">
-        <img src="./images/speaker-1.png" alt="icon">
-        <div class="speaker-card-content">
+      <img src="${element.image}" alt="icon">
+      <div class="speaker-card-content">
             <h4>${element.name}</h4>
-            <p>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</p>
+            <p>${element.title}</p>
             <hr>
-            <small>Benkler studies commons-based peer production, and published his seminal book, The Wealth of
-                Networks in 2006</small>
+            <small>${element.desc}</small>
         </div>
       </div>
       `;
@@ -123,9 +119,6 @@ function loadOnFirst() {
     // div.classList.add("speaker-grid");
     // speakerCards.insertBefore(div, loadMoreBtn);
     div.innerHTML = out;
-    loadMoreBtn.style.display = 'none'
+    loadMoreBtn.style.display = "none";
   });
 }
-
-
-

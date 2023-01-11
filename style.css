@@ -28,6 +28,10 @@ body {
 
 }
 
+.brand-logo {
+    width: 100px;
+}
+
 .mixed {
     /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
     background: url('./images/mobile-intro-bg.png');
@@ -77,8 +81,8 @@ body {
 }
 
 .side-nav .close-btn img {
-    height: 55px;
-    margin: 20px;
+    height: 40px;
+    margin: 30px;
     transition: 0.5s;
 }
 
@@ -319,7 +323,7 @@ main {
 .speaker-card {
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     gap: 15px;
 }
@@ -439,7 +443,7 @@ footer {
 
     header {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-        position: sticky;
+        position: relative;
         top: 0;
         background: white;
     }
@@ -486,7 +490,8 @@ footer {
         text-align: center;
         gap: 4px;
         border: 2px solid transparent;
-
+        width: 100%;
+        margin: 0 a;
     }
 
     .main-card:hover {
