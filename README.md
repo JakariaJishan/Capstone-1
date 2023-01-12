@@ -50,7 +50,7 @@
 
 You can checkout the running website here:
 
-- [Live Demo Link](link)
+- [Live Demo Link](https://jakariajishan.github.io/Capstone-1/)
 
 My presentation of the project in its current state:
 
@@ -89,10 +89,10 @@ I do recommend this method given it is easier, but if you want you can make this
 
 ## 👤 Author <a name="author"></a>
 
-Bryan Hurtado
+Jakaria Jishan
 
-- GitHub: [@](link)
-- Twitter: [@](link)
+- GitHub: [@](https://github.com/JakariaJishan)
+- Twitter: [@](https://twitter.com/jakaria_jishan)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,7 +111,7 @@ Bryan Hurtado
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issue_page).
+Feel free to check the [issues page](https://github.com/JakariaJishan/Capstone-1/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
