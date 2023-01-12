@@ -114,9 +114,6 @@ window.addEventListener('load', () => {
       </div>
       `;
     }
-    // let div = document.createElement("div");
-    // div.classList.add("speaker-grid");
-    // speakerCards.insertBefore(div, loadMoreBtn);
     div.innerHTML = out;
     loadMoreBtn.style.display = 'none';
   });
