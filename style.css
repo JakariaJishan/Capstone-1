@@ -27,9 +27,7 @@ body {
   font-family: 'lato', sans-serif;
 }
 
-.brand-logo {
-  width: 100px;
-}
+
 
 .mixed {
   background: url('./images/mobile-intro-bg.png');
@@ -413,7 +411,7 @@ main {
 }
 
 .footer-items {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
