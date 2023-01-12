@@ -54,7 +54,7 @@ You can checkout the running website here:
 
 My presentation of the project in its current state:
 
-- [Presentation](link)
+- [Presentation](https://www.loom.com/share/a3200a77e29d4dd4bf18625d36b832d0)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
