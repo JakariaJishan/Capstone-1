@@ -27,8 +27,6 @@ body {
   font-family: 'lato', sans-serif;
 }
 
-
-
 .mixed {
   background: url('./images/mobile-intro-bg.png');
   background-position: center;
@@ -89,6 +87,10 @@ body {
 .speaker-card img {
   height: 100px;
   width: 100px;
+}
+
+.sponsors-brand img {
+  width: 150px;
 }
 
 .speaker-btn button img {
@@ -406,10 +408,6 @@ main {
   gap: 40px;
 }
 
-.sponsors-brand img {
-  width: 150px;
-}
-
 .footer-items {
   width: 80%;
   margin: 0 auto;
@@ -536,5 +534,4 @@ main {
   .footer-2nd {
     display: block;
   }
-
 }

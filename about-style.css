@@ -28,7 +28,6 @@ body {
   text-align: center;
 }
 
-
 .mixed {
   background: url('./images/mobile-intro-bg.png');
   background-position: center;
@@ -86,6 +85,9 @@ body {
 
 /* stylelint instructions start */
 
+.sponsors-brand img {
+  width: 150px;
+}
 
 .top-nav ul li a img {
   height: 18px;
@@ -360,10 +362,6 @@ main {
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-}
-
-.sponsors-brand img {
-  width: 150px;
 }
 
 .footer-items {
